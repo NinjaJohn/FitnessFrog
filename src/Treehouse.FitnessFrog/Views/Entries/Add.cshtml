@@ -21,7 +21,7 @@
 
                 <div class="form-group">
                     @Html.LabelFor(m => m.Date, new {@class = "control-label"})
-                    @Html.TextBoxFor(m => m.Date, "{0:d}", new {@class = "form-control"})
+                    @Html.TextBoxFor(m => m.Date, "{0:d}", new {@class = "form-control datepicker" })
 
                 </div>
 
@@ -57,7 +57,7 @@
                 <div class="form-group">
                     <div class="checkbox">
                         <label>
-                            @Html.CheckBoxFor(m => m.Exclude) @Html.DisplayNameFor(m => m.Exclude)        
+                            @Html.CheckBoxFor(m => m.Exclude) @Html.DisplayNameFor(m => m.Exclude) 
                         </label>
                     </div>
                     
